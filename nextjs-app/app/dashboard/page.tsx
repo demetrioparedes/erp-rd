@@ -10,7 +10,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     const check = async () => {
-      const {  { session } } = await supabase.auth.getSession();
+      const { data: { session } } = await supabase.auth.getSession();
       if (!session) router.push('/');
       else { setUser(session.user); setLoading(false); }
     };
