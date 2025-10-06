@@ -1,4 +1,4 @@
-'use client';
+ï»¿'use client';
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -51,13 +51,13 @@ export default function LoginPage() {
     <div className="flex min-h-screen flex-col items-center justify-center p-4">
       <div className="w-full max-w-md space-y-6 rounded-lg bg-white p-8 shadow-md">
         <h1 className="text-2xl font-bold text-center text-gray-800">ERP RD</h1>
-        <p className="text-center text-gray-600">Inicia sesión o regístrate</p>
+        <p className="text-center text-gray-600">Inicia sesiÃ³n o regÃ­strate</p>
 
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
             <input
               type="email"
-              placeholder="Correo electrónico"
+              placeholder="Correo electrÃ³nico"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full rounded border p-3"
@@ -67,7 +67,7 @@ export default function LoginPage() {
           <div>
             <input
               type="password"
-              placeholder="Contraseña"
+              placeholder="ContraseÃ±a"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full rounded border p-3"
@@ -79,7 +79,7 @@ export default function LoginPage() {
             disabled={loading}
             className="w-full rounded bg-blue-600 py-3 text-white disabled:opacity-50"
           >
-            {loading ? 'Cargando...' : 'Iniciar sesión'}
+            {loading ? 'Cargando...' : 'Iniciar sesiÃ³n'}
           </button>
         </form>
 

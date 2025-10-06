@@ -1,11 +1,11 @@
-import { Inter } from 'next/font/google';
+ï»¿import { Inter } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'ERP RD - PYME',
-  description: 'Facturación electrónica para República Dominicana',
+  description: 'FacturaciÃ³n electrÃ³nica para RepÃºblica Dominicana',
 };
 
 export default function RootLayout({
